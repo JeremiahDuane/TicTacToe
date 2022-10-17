@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tic-Tac-Toe</title>
+<link rel="shortcut icon" type="../images/png" href="../images/o.png" />
+<link rel="stylesheet" href="../style/color.css">
+<meta charset="utf-8">
+<script src="mobScript/mobNext.js">	
+</script>
+</head>
+<style>
+.buttonGroup {
+font-size:72px;
+}
+button {
+float: center;
+}
+</style>
+<body>
+	<div style="float: center; padding: 50px;">
+		<img src="../images/difKerb.png" width=100%>
+	</div>
+	<div id=scoreboard></div>
+	<div style="width: 100%; text-align: center;">
+		<img style="width: 80%" id=score src="../images/tie.png">
+	</div>
+	<div style="width: 100%; text-align: center;">
+		<form>
+			<div id=scoreButton
+				style="width: 80%; position: fixed; margin: 100px; visibility: hidden; padding-top: 100px; font-weight: bold;">
+				<button class="buttonGroup">Play Again</button>
+			</div>
+		</form>
+	</div>
+
+	<form>
+		<div id=scoreButton
+			style="width: 80%; position: fixed; margin: 100px; visibility: hidden; text-align: center; padding: 20px; font-weight: bold;">
+			<button style="font-size: 48px;">Play Again</button>
+		</div>
+	</form>
+	<table style="width: 0%;" class="center" id=grid>
+		<tr>
+			<td><div class="box"
+					onclick="document.getElementById('11').src='../images/o.png'; a=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=a>
+					<img id=11 width=200px src="../images/square.png">
+				</div></td>
+			<td><div class="box"
+					onclick="document.getElementById('12').src='../images/o.png'; b=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=b>
+					<img id=12 width=200px src="../images/square.png">
+				</div></td>
+			<td><div class="box"
+					onclick="document.getElementById('13').src='../images/o.png'; c=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=c>
+					<img id=13 width=200px src="../images/square.png">
+				</div></td>
+		</tr>
+		<tr style="padding-left: o;">
+			<td><div class="box"
+					onclick="document.getElementById('14').src='../images/o.png'; d=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=d>
+					<img id=14 width=200px src="../images/square.png">
+				</div></td>
+			<td><div class="box"
+					onclick="document.getElementById('15').src='../images/o.png'; e=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=e>
+					<img id=15 width=200px src="../images/square.png">
+				</div></td>
+			<td><div class="box"
+					onclick="document.getElementById('16').src='../images/o.png'; f=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=f>
+					<img id=16 width=200px src="../images/square.png">
+				</div></td>
+		</tr>
+		<tr style="padding-left: o;">
+			<td><div class="box"
+					onclick="document.getElementById('17').src='../images/o.png'; g=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=g>
+					<img id=17 width=200px src="../images/square.png">
+				</div></td>
+			<td><div class="box"
+					onclick="document.getElementById('18').src='../images/o.png'; h=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=h>
+					<img id=18 width=200px src="../images/square.png">
+				</div></td>
+			<td><div class="box"
+					onclick="document.getElementById('19').src='../images/o.png'; i=1; total = a+b+c+d+e+f+g+i; setTimeout(function() { nextTurn(0.9); }, 1);"
+					id=i>
+					<img id=19 width=200px src="../images/square.png">
+				</div></td>
+		</tr>
+	</table>
+	<div style="text-align: center; padding-top: 20px;">
+		<form style="display:inline;"><button class="buttonGroup">
+			<span style="color: black; text-decoration: none;">Restart</span>
+		</button></form>
+		<form style="display:inline;" action="mobIndex.html"><button class="buttonGroup">
+			&nbsp;&nbsp;<span 
+				style="color: black; text-decoration: none;">Back</span>&nbsp;&nbsp;
+		</button></form>
+	</div>
+
+
+</body>
+</html>

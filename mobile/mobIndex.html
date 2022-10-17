@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tic-Tac-Toe</title>
+<link rel="shortcut icon" type="image/png" href="../images/o.png" />
+<meta charset="utf-8">
+<script type="text/javascript">
+	if (screen.width >= 700) {
+		document.location = "index.html";
+	}
+</script>
+<style>
+.mobileNav {
+	width: 100%;
+	text-align: center;
+	background-color: white; /* Green */
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	display: block;
+}
+
+.items:hover {
+	background-color: #cccccc;
+}
+
+.items {
+	cursor: pointer;
+	border-top: 2px solid #555555;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	cursor: pointer;
+}
+
+.menu {
+	width: 100%;
+}
+
+.subheading {
+	text-align: center;
+	font-size: 42px;
+	font-family: helvetica;
+	padding: 20px;
+	padding-top: 0;
+}
+</style>
+</head>
+
+<body>
+	<div class="mobileNav" style="padding-bottom: 0px">
+		<img src="../images/tictac.png" width=80%;>
+	</div>
+	<div class="mobileNav" style="padding-bottom: 0px">
+		<img src="../images/toe.png" width=45%;>
+	</div>
+	<div class="mobileNav" style="border-top: 8px solid black; padding-top:30px; border-bottom: 8px solid black; padding-bottom: 0px;">
+		<img src="../images/dif.png" width=93%;>
+	</div>
+	<form action="mobNoob.html"><button class="mobileNav items">
+		<span class="menu"><img class="image"
+			src="../images/noob.png" width=75%></span>
+		<div class="subheading">(minimal difficulty)</div>
+	</button></form>
+	<form action="mobKerb.html"><button class="mobileNav items">
+		<span class="menu" ><img class="image"
+			src="../images/kerb.png" width=75%></span>
+		<div class="subheading">(substantial difficulty)</div>
+	</button></form>
+	<form action="mobHera.html"><button class="mobileNav items">
+		<span class="menu""><img class="image"
+			src="../images/hera.png" width=75%></span>
+		<div class="subheading">(potentially impossible)</div>
+	</button></form>
+
+</body>
+</html>
